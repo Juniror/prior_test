@@ -5,7 +5,7 @@
 ![Graph](prior.drawio.png)
 
 **ข้อมูลที่ใช้:** ข้อมูล Input นำมาจาก Web API `https://storage.googleapis.com/maoz-event/rawdata.txt`  
-**Library ที่ใช้:** ใช้ `Gson` ในการคลาย (Convert) ข้อมูล JSON ให้ออกมาเป็น Data Object
+**Library ที่ใช้:** ใช้ `Gson` แปลงข้อมูล JSON ให้ออกมาเป็น Data Object
 
 ## รูปแบบการทำงาน (2 วิธี)
 โดยทั้ง 2 วิธีนี้จะใช้ Breadth-First Search (BFS) ในการวนลูปข้อมูล
@@ -15,3 +15,4 @@
 
 ### วิธีที่ 2: การใช้โครงสร้าง Graph (Object-Oriented)
 เราจะนำข้อมูล Data Object ที่ได้ไปสร้างเป็นโครงสร้าง `Graph` และ `Node` ขึ้นมาเป็นตัวกลาง เพื่อให้ข้อมูลมีรูปร่างที่จับต้องได้ง่ายและโยงเส้นทาง (Edges) เข้าหากัน จากนั้นจึงใช้ BFS ในการรับและส่งผ่านข้อมูลตามปกติตามเส้นทางจริง
+
